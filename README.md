@@ -9,17 +9,9 @@
 
 ## Screenshots
 
-| Places | Automation editor |
-|---|---|
-| ![Places screen](docs/screenshots/screen-places.png) | ![Automation editor](docs/screenshots/screen-editor.png) |
-
-| Execution log | Access & permissions |
-|---|---|
-| ![Execution log](docs/screenshots/screen-logs.png) | ![Access and permissions screen](docs/screenshots/screen-access.png) |
-
-| Settings |
-|---|
-| ![Settings screen](docs/screenshots/screen-settings.png) |
+| Places | Automation editor | Execution log | Access & permissions | Settings |
+|---|---|---|---|---|
+| ![Places screen](docs/screenshots/screen-places.png) | ![Automation editor](docs/screenshots/screen-editor.png) | ![Execution log](docs/screenshots/screen-logs.png) | ![Access and permissions screen](docs/screenshots/screen-access.png) | ![Settings screen](docs/screenshots/screen-settings.png) |
 
 ## Features
 
