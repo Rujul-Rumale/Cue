@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180" role="img" aria-label="Cue logo">
+
+<g transform="translate(0,0) scale(0.42)">
+  <path d="M 302 154 A 112 112 0 1 0 302 358" fill="none" stroke="#F1F0EC" stroke-width="27" stroke-linecap="round"/>
+  <circle cx="326" cy="256" r="17" fill="#A8E66B"/>
+</g>
+<text x="245" y="137" font-family="Inter, Manrope, Arial, sans-serif" font-size="112" font-weight="650" letter-spacing="-5" fill="#F1F0EC">cue</text>
+
+</svg>

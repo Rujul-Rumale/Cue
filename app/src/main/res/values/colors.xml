@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cue_ink">#171817</color>
+    <color name="cue_surface">#F1F0EC</color>
+    <color name="cue_accent">#A8E66B</color>
+    <color name="cue_accent_light">#C7D9B1</color>
+    <color name="cue_secondary">#2E312E</color>
+    <color name="cue_muted">#6B6E6A</color>
+</resources>

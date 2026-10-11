@@ -1,0 +1,47 @@
+:root {
+  /* Cue brand */
+  --cue-ink: #171817;
+  --cue-surface: #F1F0EC;
+  --cue-accent: #A8E66B;
+  --cue-accent-light: #C7D9B1;
+  --cue-secondary: #2E312E;
+  --cue-muted: #6B6E6A;
+
+  /* Semantic states: use as subtle backgrounds, not as brand accents */
+  --cue-success-bg: #EAF7E3;
+  --cue-warning-bg: #FFF4D6;
+  --cue-error-bg: #FFE4E0;
+  --cue-info-bg: #E6F0FF;
+
+  /* UI mapping */
+  --color-bg: var(--cue-surface);
+  --color-surface: #FFFFFF;
+  --color-text: var(--cue-ink);
+  --color-text-muted: var(--cue-muted);
+  --color-border: #DADBD5;
+  --color-primary: var(--cue-ink);
+  --color-primary-text: var(--cue-surface);
+  --color-accent: var(--cue-accent);
+  --color-accent-text: var(--cue-ink);
+  --radius-card: 16px;
+  --radius-control: 10px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-bg: var(--cue-ink);
+  --color-surface: #222522;
+  --color-text: var(--cue-surface);
+  --color-text-muted: #A5A8A2;
+  --color-border: #383B37;
+  --color-primary: var(--cue-surface);
+  --color-primary-text: var(--cue-ink);
+  --color-accent: var(--cue-accent);
+  --color-accent-text: var(--cue-ink);
+}
+
+/* Suggested typography: Inter, with system fallbacks */
+:root {
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", sans-serif;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cue</string>
+    <string name="accessibility_service_desc">Lets Cue lock the screen, open notifications or quick settings, tap text and buttons, and notice app switches and volume-key presses for your automations.</string>
+    <string name="notification_listener_label">Cue notifications</string>
+</resources>

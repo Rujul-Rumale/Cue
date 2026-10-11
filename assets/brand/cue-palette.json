@@ -1,0 +1,36 @@
+{
+  "brand": {
+    "ink": "#171817",
+    "surface": "#F1F0EC",
+    "accent": "#A8E66B",
+    "accent_light": "#C7D9B1",
+    "secondary": "#2E312E",
+    "muted": "#6B6E6A",
+    "success": "#EAF7E3",
+    "warning": "#FFF4D6",
+    "error": "#FFE4E0",
+    "info": "#E6F0FF"
+  },
+  "typography": {
+    "font_family": "Inter",
+    "fallbacks": [
+      "ui-sans-serif",
+      "system-ui",
+      "-apple-system",
+      "BlinkMacSystemFont",
+      "Segoe UI",
+      "sans-serif"
+    ]
+  },
+  "radii_px": {
+    "card": 16,
+    "control": 10,
+    "app_icon": 92
+  },
+  "guidelines": [
+    "Use #171817 and #F1F0EC as the core foreground/background pair.",
+    "Reserve #A8E66B for primary actions, selected states, and the Cue dot.",
+    "Use semantic colors mainly for low-emphasis status backgrounds.",
+    "Prefer flat fills, thin borders, and no gradients or heavy shadows."
+  ]
+}
