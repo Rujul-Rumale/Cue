@@ -68,3 +68,7 @@ Providers normalize platform callbacks into `TriggerEvent`s; the engine evaluate
 
 - Map tiles © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL), rendered with [osmdroid](https://github.com/osmdroid/osmdroid) (Apache-2.0).
 - Brand assets in `assets/brand/` by the Cue team.
+
+## License
+
+MIT © 2026 Rujul Rumale — see [LICENSE](LICENSE).

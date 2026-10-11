@@ -240,7 +240,7 @@ fun SettingsScreen(vm: MainViewModel) {
             }
 
             Text(
-                "Cue · 0.1.0 · local-first · internet used only for map tiles",
+                "Cue · 0.1.0 · local-first · internet used only for map tiles\n© 2026 Rujul Rumale · MIT licensed",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(vertical = 16.dp),
