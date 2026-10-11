@@ -204,6 +204,10 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         viewModelScope.launch { repo.clearLogs() }
     }
 
+    fun deleteLog(log: ExecutionLog) {
+        viewModelScope.launch { repo.deleteLog(log.id) }
+    }
+
     fun saveVariables(next: List<Variable>) {
         viewModelScope.launch {
             for (v in next) repo.setVariable(v)

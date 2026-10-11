@@ -9,8 +9,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.DeleteSweep
 import androidx.compose.material3.Button
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -55,7 +57,7 @@ fun LogsScreen(vm: MainViewModel) {
         } else {
             LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp)) {
                 items(logs, key = { it.id }) { log ->
-                    LogRow(log)
+                    LogRow(log, onDelete = { vm.deleteLog(log) })
                 }
             }
         }
@@ -63,13 +65,13 @@ fun LogsScreen(vm: MainViewModel) {
 }
 
 @Composable
-fun LogRow(log: ExecutionLog) {
+fun LogRow(log: ExecutionLog, onDelete: () -> Unit = {}) {
     Card(
         modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
         colors = CardDefaults.cardColors(),
     ) {
         Column(Modifier.padding(16.dp)) {
-            Row {
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(log.automationName, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
                 Text(
                     log.result.name.lowercase().replace('_', ' '),
@@ -81,6 +83,9 @@ fun LogRow(log: ExecutionLog) {
                         else -> MaterialTheme.colorScheme.onSurfaceVariant
                     },
                 )
+                IconButton(onClick = onDelete) {
+                    Icon(Icons.Filled.Delete, contentDescription = "Remove from history")
+                }
             }
             Text(
                 log.triggerSummary.ifEmpty { log.result.name },

@@ -59,7 +59,11 @@ class AutomationRepository(private val db: ContextDatabase) {
         return id
     }
 
-    suspend fun deleteAutomation(id: Long) = db.automationDao().delete(id)
+    suspend fun deleteAutomation(id: Long) {
+        db.automationDao().delete(id)
+        // A deleted automation leaves no history behind.
+        db.logDao().deleteForAutomation(id)
+    }
 
     suspend fun setEnabled(id: Long, enabled: Boolean) = db.automationDao().setEnabled(id, enabled)
 
@@ -105,6 +109,8 @@ fun observeLogs(limit: Int = MAX_LOGS): Flow<List<ExecutionLog>> =
         db.logDao().getRecent(limit).map { it.toDomain() }
 
     suspend fun clearLogs() = db.logDao().deleteAll()
+
+    suspend fun deleteLog(id: Long) = db.logDao().delete(id)
 
     // ---- Variables ---------------------------------------------------------
 

@@ -9,17 +9,17 @@
 
 ## Screenshots
 
-| Automations | Places |
+| Places | Automation editor |
 |---|---|
-| ![Automations screen](docs/screenshots/home.png) | ![Places screen](docs/screenshots/places.png) |
+| ![Places screen](docs/screenshots/screen-places.png) | ![Automation editor](docs/screenshots/screen-editor.png) |
 
-| Map place picker | Execution log |
+| Execution log | Access & permissions |
 |---|---|
-| ![Map place picker](docs/screenshots/map-picker.png) | ![Execution log](docs/screenshots/logs.png) |
+| ![Execution log](docs/screenshots/screen-logs.png) | ![Access and permissions screen](docs/screenshots/screen-access.png) |
 
-| Access & permissions | Settings |
-|---|---|
-| ![Access and permissions screen](docs/screenshots/permissions.png) | ![Settings screen](docs/screenshots/settings.png) |
+| Settings |
+|---|
+| ![Settings screen](docs/screenshots/screen-settings.png) |
 
 ## Features
 

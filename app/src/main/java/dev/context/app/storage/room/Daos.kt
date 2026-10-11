@@ -76,6 +76,12 @@ interface LogDao {
     @Query("DELETE FROM execution_logs WHERE timestamp < :before")
     suspend fun deleteOlderThan(before: Long)
 
+    @Query("DELETE FROM execution_logs WHERE id = :id")
+    suspend fun delete(id: Long)
+
+    @Query("DELETE FROM execution_logs WHERE automationId = :automationId")
+    suspend fun deleteForAutomation(automationId: Long)
+
     @Query("DELETE FROM execution_logs")
     suspend fun deleteAll()
 
