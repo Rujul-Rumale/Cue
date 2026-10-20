@@ -72,3 +72,7 @@ Providers normalize platform callbacks into `TriggerEvent`s; the engine evaluate
 ## License
 
 MIT © 2026 Rujul Rumale — see [LICENSE](LICENSE).
+
+---
+
+![Views](https://komarev.com/ghpvc/?username=Rujul-Rumale&repo=Cue&label=Views&color=0e75b6)
