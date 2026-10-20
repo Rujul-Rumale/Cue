@@ -75,4 +75,4 @@ MIT © 2026 Rujul Rumale — see [LICENSE](LICENSE).
 
 ---
 
-![Views](https://komarev.com/ghpvc/?username=Rujul-Rumale&repo=Cue&label=Views&color=0e75b6)
+![Views](https://hits.sh/github.com/Rujul-Rumale/Cue.svg?style=flat-square&label=views&color=0e75b6&labelColor=555)
